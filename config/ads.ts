@@ -22,7 +22,16 @@ export const ADS = {
   toolTop: ``,
   toolMiddle: ``,
   toolBottom: ``,
-  sidebar: ``,
+  sidebar: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
   footerBanner: ``,
 };
 
