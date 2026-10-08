@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 5rem; }
+  body {
+    @apply bg-white text-ink antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3 { @apply font-bold tracking-tight text-ink; text-wrap: balance; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-600; outline-style: solid; }
+  img, svg, video, canvas { max-width: 100%; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+  .card { @apply rounded-2xl border border-line bg-white shadow-soft; }
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-brand-600 text-white hover:bg-brand-700; }
+  .btn-secondary { @apply btn border border-line bg-white text-ink hover:border-brand-200 hover:bg-brand-50; }
+  .input { @apply min-h-11 w-full rounded-xl border border-line bg-white px-3.5 text-base text-ink placeholder:text-muted/60 focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-100; }
+  .label { @apply mb-1.5 block text-sm font-medium text-ink; }
+  .chip { @apply inline-flex items-center rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700; }
+
+  .prose-content { @apply max-w-[68ch] text-[1.0625rem] leading-8 text-ink/90; }
+  .prose-content > * + * { @apply mt-5; }
+  .prose-content h2 { @apply mt-10 text-2xl; }
+  .prose-content h3 { @apply mt-8 text-xl; }
+  .prose-content a { @apply font-medium text-brand-600 underline underline-offset-2 hover:text-brand-700; }
+  .prose-content ul { @apply list-disc space-y-1.5 pl-6; }
+  .prose-content ol { @apply list-decimal space-y-1.5 pl-6; }
+  .prose-content blockquote { @apply rounded-r-xl border-l-4 border-brand-200 bg-brand-50/60 px-5 py-3 text-ink; }
+  .prose-content code { @apply rounded bg-surface px-1.5 py-0.5 text-[0.9em]; }
+}
