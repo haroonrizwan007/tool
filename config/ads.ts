@@ -16,12 +16,66 @@
  *   footerBanner    Every page: just before the footer
  */
 export const ADS = {
-  homepageTop: ``,
-  homepageMiddle: ``,
-  homepageBottom: ``,
-  toolTop: ``,
-  toolMiddle: ``,
-  toolBottom: ``,
+  homepageTop: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
+  homepageMiddle: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
+  homepageBottom: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
+  toolTop: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
+  toolMiddle: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
+  toolBottom: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
   sidebar: `<script>
   atOptions = {
     'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
@@ -32,7 +86,16 @@ export const ADS = {
   };
 </script>
 <script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
-  footerBanner: ``,
+  footerBanner: `<script>
+  atOptions = {
+    'key' : '08e5f74382f8dfda0ef6fde2d51bd362',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
 };
 
 export type AdSlotName = keyof typeof ADS;
