@@ -97,5 +97,6 @@ export const ADS = {
 </script>
 <script src="https://bicea.org/22/08e5f74382f8dfda0ef6fde2d51bd362"></script>`,
 };
+popunder:'<script data-cfasync="false" src="https://afders.org/1/642ce88bb670bf79f7e7b7e068ef1df8"></script>'
 
 export type AdSlotName = keyof typeof ADS;
